@@ -1,25 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from "./components/header/header.js"
+import LoginForm from './components/login/login.js';
+import HistogramsForm from './components/Histograms/Histograms.js'
+import Footer from './components/footer/footer.js'
+import Main from './components/Main/main.js'
+import SearchResult from './components/SearchResult/SearchResult.js';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app-container'>
+      <Header/>
+      <div className='grow-1'>
+          <Routes>
+          <Route path='/login' element={<LoginForm/>}/>
+          <Route path='/histogramform' element={<HistogramsForm/>}/>
+          <Route path='/' element={<Main/>}/>
+          <Route path='/searchres' element={<SearchResult/>}/>
+        </Routes>
+      </div>
+      <Footer/>
     </div>
   );
 }
 
-export default App;
+export default observer(App);

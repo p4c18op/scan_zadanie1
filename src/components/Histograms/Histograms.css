@@ -1,0 +1,341 @@
+@import url(../fonts/fonts.css);
+
+.checkbox {
+    height: 25px;
+    width: 25px;
+    border: 1px solid rgb(193, 27, 27);
+    color: orange;
+}
+
+.errors {
+    border : 2px solid red;
+    color: rgb(224, 0, 0);
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.small-text-row {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.small-text-cont {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.histograms-text-cont {
+    width: calc(100% - 50px);
+}
+
+.histograms-big-text {
+    font-family: Ferry;
+    font-size: 40px
+}
+
+.histograms-cont {
+    font-family: Inter;
+    width: 870px;
+    margin-left: 30px;
+}
+
+.histograms-main-cont {
+    font-family: Inter;
+    margin-top: 40px;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.histograms-form-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 870px;
+    height: 545px;
+    box-shadow: 0 0 10px rgba(157, 25, 25, 0.4);
+}
+
+.histograms-images-cont {
+    min-height: 100%;
+    width: calc(100% - 900px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.histograms-big-image-cont {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.histograms-small-images {
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-margin-right {
+    margin-right: 100px;
+}
+
+.top-input-cont {
+    padding-top: 30px !important;
+}
+
+.histograms-input-cont {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.histograms-input {
+    border-radius: 10px;
+    border: 3px solid rgba(0, 90, 0, 0.4)
+}
+
+.inn-input {
+    margin-top: 20px;
+    width: 240px;
+    height: 45px;
+}
+
+.tonality-input {
+    margin-top: 20px;
+    width: 240px;
+    height: 45px;
+}
+
+.date-inputs-cont {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+}
+
+.date-input {
+    margin-top: 20px;
+    min-width: 180px;
+    height: 45px;
+}
+
+.inputs-cont {
+    font-size: 20px;
+    height: 100%;
+    margin-left: 5%;
+    width: 40%;
+}
+
+.checkboxes-cont {
+    margin-top: 45px;
+    margin-right: 5%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-cont {
+    margin-top: 15px;
+    max-height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-text {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-disabled {
+    color:rgba(0, 0, 85, 0.3)
+}
+
+.confirm-button-cont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 220px;
+}
+
+.confirm-button-wrap {
+    width: 305px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.text-under-button {
+    color: rgba(0, 0, 85, 0.5);
+    margin-top: 10px;
+}
+
+.confirm-button {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 400;
+    color: white;
+    width: 305px;
+    height: 60px;
+    background-color: #f2b6c1;
+    border-radius: 10px;
+    border: 0;
+}
+
+.confirm-button-inactive {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 400;
+    color: white;
+    width: 305px;
+    height: 60px;
+    background-color: rgba(218, 79, 0, 0.5);
+    border-radius: 10px;
+    border: none;
+}
+
+.err-msg-cont {
+    padding-top: 5px;
+    width: 240px;
+    font-size: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+
+.err-msg-dates-cont {
+    padding-top: 5px;
+    width: 380px;
+    font-size: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+
+
+@media (max-width: 900px) {
+
+    .small-text-cont {
+        margin-top: 30px;
+        width: 70vw;
+        font-size: 15px;
+    }
+
+    .histograms-text-cont {
+        width: calc(100% - 50px);
+    }
+
+    .histograms-big-text {
+        width: 70vw;
+        font-family: Ferry;
+        font-size: 30px
+    }
+
+    .histograms-form-cont {
+        width: 100vw;
+        height: 700px;
+    }
+
+    .histograms-cont {
+        margin-left: 0;
+    }
+
+    .histograms-main-cont {
+        flex-direction: column;
+    }
+
+    .top-image-cont-mobile {
+        margin-top: -140px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        height: 300px;
+        width: 95vw;
+        position: absolute;
+    }
+
+    .date-inputs-cont {
+        width: 90vw;
+        flex-direction: column;
+    }
+
+    .histograms-input-cont {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .inn-input {
+        margin-top: 20px;
+        width: 90vw;
+        height: 45px;
+    }
+
+    .tonality-input {
+        margin-top: 20px;
+        width: 90vw;
+        height: 45px;
+    }
+
+    .date-input {
+        margin-top: 20px;
+        min-width: 90vw;
+        height: 45px;
+    }
+
+    .inputs-cont {
+        height: 100%;
+        margin-left: 0;
+    }
+
+    .confirm-button-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 220px;
+    }
+
+    .confirm-button-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 90px;
+        margin-bottom: 20px;
+    }
+
+    .histograms-images-cont {
+        margin-top: 20px;
+        width: 100vw;
+        height: 400px;
+    }
+
+    .histograms-big-image {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        scale: 0.8;
+    }
+
+}

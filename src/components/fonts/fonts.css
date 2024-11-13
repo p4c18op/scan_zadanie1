@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'Ferry';
+	src: url('./font/Ferry/Ferry-Black.eot');
+	src: local('Ferry Black'), local('Ferry-Black'),
+		url('./font/Ferry/Ferry-Black.eot?#iefix') format('embedded-opentype'),
+		url('./font/Ferry/Ferry-Black.woff') format('woff'),
+		url('./font/Ferry/Ferry-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('./font/Inter/Inter-VariableFont_slnt,wght.ttf');
+	font-style: normal;
+}
