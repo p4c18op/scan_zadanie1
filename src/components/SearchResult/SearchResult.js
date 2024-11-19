@@ -96,12 +96,12 @@ const SearchResult = () => {
                 <p>Риски</p>
               </div>
             </div>
-            <div className='searchres-slider-cont'>
+            <div className='searchres-cont'>
               {histogramsNothingFound ?
                 'ничего не найдено'
               :
                 response ?
-                  <Slider1 responseData={response}/>
+                  <responseData={response}/>
                 :
                   'загрузка'
               }
@@ -113,29 +113,6 @@ const SearchResult = () => {
         :
           <div>
             <p className='searchres-smaller-big-text'>список документов</p>
-            {visibleData ?
-              <div className='cards-cont'>
-                {clientWidth < 900 ?
-                visibleData.map((item) =>
-                <Solo
-                  item={item}
-                />
-                )
-                :
-                visibleData.map((item, index) =>
-                  index % 2 === 0 ?
-                  <Pare
-                      key={index}
-                      item1={item}
-                      item2={visibleData[index+1]}
-                  />  : null
-                  )}
-              </div>
-            :
-              <div>
-                <p>загрузка</p>
-              </div>
-            }
             <div className='show-more-btn-cont'>
               <button onClick={() => {showMore()}} className='show-more-btn'>Показать больше</button>
             </div>
