@@ -37,49 +37,50 @@ class Main extends React.Component {
                 <div>Запросить данные</div>
               </div>
               }
-
             </div>
           </div>
-
         </div>
         <div className='main-page-slider'>
           <div className='big-text bit-margin-left'>
             Почему вы выбрали именно нас
           </div>
         </div>
+        <div>
           <div className='tariffs'>
             <div className='tariff'>
-             <div className='tariff-header'>
-              <div className='tariff-header-cont'>
-                <div className='tariff-header-bigger-text'>Newcomer</div>
-                <div className='tariff-header-smaller-text'>Для небольшого исследования</div>
-              <div className='tariff-inner'>
-                <div className='current-tariff-badge-container'>
-                  {userData.tariff == 'newcomer'
-                  ?
-                    <p className='current-tariff-badge'><span>Текущий тариф</span></p>
-                  :
-                    <p className='current-tariff-badge tariff-badge-hidden '><span>Текущий тариф</span></p>
-                  }
-                </div>
-                <div>
-                  <div className='tariff-current-price'>598 ₽ <span className='tariff-previous-price'>1 198 ₽</span></div>
-                  <div className='tariff-installment-plan '>или 139 ₽/мес. при рассрочке на 24 мес.</div>
-                </div>
-                <div className='tariff-feature-list'> В тариф входит:
-                  <ul>
-                    <li>Безлимитная история запросов</li>
-                    <li>Безопасная сделка</li>
-                    <li>Поддержка 24/7</li>
-                  </ul>
-                </div>
-                <div className='tariff-button-container'>
-                  {userData.tariff == 'newcomer'
-                  ?
-                    <div className='tariff-button grey'>Перейти в личный кабинет</div>
-                  :
-                    <div className='tariff-button'>Подробнее</div>
-                  }
+              <div className='tariff-header'>
+                <div className='tariff-header-cont'>
+                  <div className='tariff-header-bigger-text'>Newcomer</div>
+                  <div className='tariff-header-smaller-text'>Для небольшого исследования</div>
+                  <div className='tariff-inner'>
+                    <div className='current-tariff-badge-container'>
+                      {userData.tariff == 'newcomer'
+                      ?
+                        <p className='current-tariff-badge'><span>Текущий тариф</span></p>
+                      :
+                        <p className='current-tariff-badge tariff-badge-hidden '><span>Текущий тариф</span></p>
+                      }
+                    </div>
+                  </div>
+                  <div>
+                    <div className='tariff-current-price'>598 ₽ <span className='tariff-previous-price'>1 198 ₽</span></div>
+                    <div className='tariff-installment-plan '>или 139 ₽/мес. при рассрочке на 24 мес.</div>
+                  </div>
+                  <div className='tariff-feature-list'> В тариф входит:
+                    <ul>
+                      <li>Безлимитная история запросов</li>
+                      <li>Безопасная сделка</li>
+                      <li>Поддержка 24/7</li>
+                    </ul>
+                  </div>
+                  <div className='tariff-button-container'>
+                    {userData.tariff == 'newcomer'
+                    ?
+                      <div className='tariff-button grey'>Перейти в личный кабинет</div>
+                    :
+                      <div className='tariff-button'>Подробнее</div>
+                    }
+                  </div>
                 </div>
               </div>
             </div>
@@ -88,6 +89,8 @@ class Main extends React.Component {
                 <div className='tariff-header-cont'>
                   <div className='tariff-header-bigger-text'>Pro</div>
                   <div className='tariff-header-smaller-text'>Для HR и фрилансеров</div>
+                </div>
+              </div>
               <div className='tariff-inner'>
                 <div className='current-tariff-badge-container'>
                   {userData.tariff == 'pro'

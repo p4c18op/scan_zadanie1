@@ -6,6 +6,7 @@ import HistogramsForm from './components/Histograms/Histograms.js'
 import Footer from './components/footer/footer.js'
 import Main from './components/Main/main.js'
 import SearchResult from './components/SearchResult/SearchResult.js';
+import {observer} from 'mobx-react-lite'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {

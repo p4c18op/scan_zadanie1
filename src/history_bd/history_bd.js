@@ -1,13 +1,9 @@
-import AuthService from '../service/AuthService'
+import AuthService from '../service/AuthService.js'
 
 
 export default class Store {
     user = {}
     isAuth = false
-
-    constructor() {
-        makeAutoObservable(this)
-    }
 
     setAuth(bool) {
         this.isAuth = bool

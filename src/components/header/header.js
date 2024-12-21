@@ -1,6 +1,7 @@
 import React from 'react'
 import userData from './user/user.js'
 import userInfo from './user/userInfo1.js'
+import { Link } from 'react-router-dom'
 import './header.css'
 
 class Header extends React.Component {
@@ -43,7 +44,7 @@ class Header extends React.Component {
                     className={this.state.isActive ? 'logo-mobile-active' : 'logo-mobile'}/>
                 {this.isAuth
                 ?
-                  <UserInfo/>
+                  <userInfo/>
                 :
                   null
                 }
@@ -108,7 +109,7 @@ class Header extends React.Component {
               </div>
               {this.isAuth ?
                 <div className='user-part-container'>
-                  <UserInfo/>
+                  <userInfo/>
                   <div className='user-badge-container'>
                     <div className='user-name-container '>
                       <div>{`${userData.firstName} ${userData.secondName.charAt(0)}.`}</div>

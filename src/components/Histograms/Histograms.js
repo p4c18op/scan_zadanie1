@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react'
 import { Context } from '../..'
 import {observer} from 'mobx-react-lite'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './Histograms.css'
 
 const HistogramsForm = () => {
@@ -159,7 +159,7 @@ const HistogramsForm = () => {
                 {clientWidth < 900
                 ?
                 <div className='top-image-cont-mobile'>
-                    <img src={require('./Document.png')}></img>
+                    <img src={require('./foto.png')}></img>
                 </div>
                 : null}
 
@@ -313,12 +313,11 @@ const HistogramsForm = () => {
                     }
                 </div>
             </div>
-                <div className='histograms-big-image-cont'>
-                    <img src={require('./foto.png')}></img>
-                </div>
+            <div className='histograms-big-image-cont'>
+                <img src={require('./foto.png')}></img>
             </div>
         </div>
-
+        
     );
 }
 

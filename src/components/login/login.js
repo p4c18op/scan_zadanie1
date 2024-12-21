@@ -1,6 +1,8 @@
 import React, {useContext, useEffect, useState} from 'react'
 import { Context } from '../..'
 import './login.css'
+import {observer} from 'mobx-react-lite'
+import { useNavigate } from 'react-router-dom'
 
 const LoginForm = () => {
     const [login, setLogin] = useState('')

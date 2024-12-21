@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Context } from '../../..';
 import './userInfo1.css';
-import { observer } from 'mobx-react-lite';
 
 const UserInfo = () => {
     const { store } = useContext(Context);

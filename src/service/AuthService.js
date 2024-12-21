@@ -1,4 +1,4 @@
-import $api from '../ste/index'
+import $api from '../ste/index.js'
 import {AxiosResponse} from 'axios'
 const BASE_URL = 'https://gateway.scan-interfax.ru';
 

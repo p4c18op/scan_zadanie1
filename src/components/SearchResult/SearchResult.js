@@ -96,28 +96,14 @@ const SearchResult = () => {
                 <p>Риски</p>
               </div>
             </div>
-            <div className='searchres-cont'>
-              {histogramsNothingFound ?
-                'ничего не найдено'
-              :
-                response ?
-                  <responseData={response}/>
-                :
-                  'загрузка'
-              }
-            </div>
           </div>
-        </div>
-        {idsNothingFound ?
-          'ничего не найдено'
-        :
           <div>
             <p className='searchres-smaller-big-text'>список документов</p>
             <div className='show-more-btn-cont'>
               <button onClick={() => {showMore()}} className='show-more-btn'>Показать больше</button>
             </div>
           </div>
-        }
+        </div>
       </div>
     );
 }

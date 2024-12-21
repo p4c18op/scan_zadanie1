@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export BASE_URL = 'https://gateway.scan-interfax.ru';
+const BASE_URL = 'https://gateway.scan-interfax.ru';
 
 const $api = axios.create({
     baseURL: BASE_URL,
